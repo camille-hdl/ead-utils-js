@@ -1,0 +1,23 @@
+# Build
+esm/
+cjs/
+
+
+# Mac
+.DS_Store
+._*
+
+
+# Editors
+.vscode/
+
+
+# NodeJS
+node_modules/
+npm-debug.log
+
+# Flow
+flow-typed/
+
+# Jest
+coverage/

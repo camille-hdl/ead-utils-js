@@ -1,0 +1,69 @@
+{
+  "name": "ead-utils",
+  "version": "1.0.0",
+  "description": "Utility functions for EAD Documents",
+  "main": "./cjs/index.js",
+  "module": "./esm/index.js",
+  "esnext": "./esm/index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "prepublishOnly": "npm run build",
+    "build": "rollup -c",
+    "jest": "jest"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.3.1",
+    "@babel/plugin-transform-runtime": "^7.3.4",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/runtime": "^7.3.4",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.1.0",
+    "eslint": "^5.13.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-flowtype": "^3.2.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "flow-bin": "^0.89.0",
+    "jest": "^24.1.0",
+    "jsdom": "^14.0.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "1.16.4",
+    "rollup": "1.0.1",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-replace": "^2.1.0"
+  },
+  "dependencies": {},
+  "jest": {
+    "verbose": true,
+    "testRegex": "(/__tests__/.*|\\.(test|spec|react-test))\\.(js|jsx)$",
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "globals": {
+      "NODE_ENV": "test"
+    },
+    "testPathIgnorePatterns": [
+      "node_modules"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!react-native|my-project|react-native-button)/"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camille-hdl/ead-utils-js.git"
+  },
+  "keywords": [
+    "ead",
+    "ead2002",
+    "xml-ead"
+  ],
+  "author": "Camille Hodoul <camille.hodoul@gmail.com> (http://twitter.com/Eartz_HC)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/camille-hdl/ead-utils-js/issues"
+  },
+  "homepage": "https://github.com/camille-hdl/ead-utils-js#readme"
+}
